@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUIProgressiveOnboard",
+        "repositoryURL": "https://github.com/muhammedtanriverdi/SwiftUIProgressiveOnboard.git",
+        "state": {
+          "branch": null,
+          "revision": "594f3209ef113350e0a330c6685114587995e489",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
