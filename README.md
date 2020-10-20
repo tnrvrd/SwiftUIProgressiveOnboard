@@ -18,7 +18,7 @@ https://github.com/muhammedtanriverdi/SwiftUIProgressiveOnboard.git
 
 Import the library
 ```
-	import SwiftUIProgressiveOnboard   
+import SwiftUIProgressiveOnboard   
 ```
 
 **STEP 1:** Set your data as a json format string
