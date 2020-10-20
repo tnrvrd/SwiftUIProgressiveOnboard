@@ -37,6 +37,7 @@ let progressiveOnboardsJson = """
         "nextButtonTitle": "Go"
     }
 ]	
+"""
 ```
 
 **STEP 2:** Create an observable ProgressiveOnboard object with your data
