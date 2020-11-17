@@ -52,6 +52,8 @@ var body: some View {
     ZStack {
 
     }
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .edgesIgnoringSafeArea(.all)
 }
 ```
 
@@ -90,6 +92,20 @@ var body: some View {
     }
 }
 ```
+
+
+**USING ON DETAIL VIEW**
+If you want to use it in another view, you can follow the same steps from the beginning. 
+You also need to define the coordinate system as "OnboardSpace" for the GeometryReader for the ZStack.
+
+**STEP 6:** 
+```
+ZStack {
+    ...
+}
+.frame(maxWidth: .infinity, maxHeight: .infinity)
+.coordinateSpace(name: "OnboardSpace")
+``` 
 
 ## Licence
 SwiftUIProgressiveOnboard is available under the MIT license. See the LICENSE file for more info.

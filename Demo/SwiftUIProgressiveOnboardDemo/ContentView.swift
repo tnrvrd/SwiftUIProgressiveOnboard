@@ -42,6 +42,8 @@ let progressiveOnboardsJson = """
 
 struct ContentView: View {
     
+    @State var showModal = false
+    
     // Step 2: Create an observable ProgressiveOnboard object with your data
     @ObservedObject var onboard = ProgressiveOnboard.init(withJson: progressiveOnboardsJson)
     
@@ -62,6 +64,19 @@ struct ContentView: View {
                         .cornerRadius(40)
                 }
                 .padding(.top, 50)
+                
+                
+                Button(action: {
+                    self.showModal.toggle()
+                }) {
+                    Text("Open Detail View")
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                }
+                .sheet(isPresented: $showModal) {
+                    DetailView()
+                }
                 
                 
                 Text("Onboard 1: Simple text with padding!")
@@ -144,7 +159,9 @@ struct ContentView: View {
                 ProgressiveOnboardView.init(withProgressiveOnboard: self.onboard)
             }
         }
-        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+        // Step 6: Specify the coordinate space for the Geometry Reader, you can dismiss if you are using 'edgesIgnoringSafeArea(.all)'
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .coordinateSpace(name: "OnboardSpace")
         .background(Color(#colorLiteral(red: 0.8486280441, green: 0.9037795663, blue: 0.9840080142, alpha: 1)))
         .edgesIgnoringSafeArea(.all)
          
