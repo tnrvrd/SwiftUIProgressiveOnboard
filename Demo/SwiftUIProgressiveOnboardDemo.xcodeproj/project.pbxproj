@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53950ACC2563C8C30068D176 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53950ACB2563C8C30068D176 /* DetailView.swift */; };
 		53EE2C10253F1B9900016E48 /* SwiftUIProgressiveOnboard in Frameworks */ = {isa = PBXBuildFile; productRef = 53EE2C0F253F1B9900016E48 /* SwiftUIProgressiveOnboard */; };
 		53FBA363253E29F900B3C160 /* SwiftUIProgressiveOnboardDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FBA362253E29F900B3C160 /* SwiftUIProgressiveOnboardDemoApp.swift */; };
 		53FBA365253E29F900B3C160 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FBA364253E29F900B3C160 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53950ACB2563C8C30068D176 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		53FBA35F253E29F900B3C160 /* SwiftUIProgressiveOnboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProgressiveOnboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FBA362253E29F900B3C160 /* SwiftUIProgressiveOnboardDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProgressiveOnboardDemoApp.swift; sourceTree = "<group>"; };
 		53FBA364253E29F900B3C160 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				53FBA362253E29F900B3C160 /* SwiftUIProgressiveOnboardDemoApp.swift */,
 				53FBA364253E29F900B3C160 /* ContentView.swift */,
+				53950ACB2563C8C30068D176 /* DetailView.swift */,
 				53FBA366253E29FC00B3C160 /* Assets.xcassets */,
 				53FBA36B253E29FC00B3C160 /* Info.plist */,
 				53FBA368253E29FC00B3C160 /* Preview Content */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53FBA365253E29F900B3C160 /* ContentView.swift in Sources */,
+				53950ACC2563C8C30068D176 /* DetailView.swift in Sources */,
 				53FBA363253E29F900B3C160 /* SwiftUIProgressiveOnboardDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
