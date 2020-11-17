@@ -19,7 +19,7 @@ public struct ProgressiveOnboardGeometry: View {
         GeometryReader { geometry in
             Group { () -> AnyView in
                 DispatchQueue.main.async {
-                    self.rect = geometry.frame(in: .global)
+                    self.rect = geometry.frame(in: .named("OnboardSpace"))
                 }
 
                 return AnyView(Color.clear)
