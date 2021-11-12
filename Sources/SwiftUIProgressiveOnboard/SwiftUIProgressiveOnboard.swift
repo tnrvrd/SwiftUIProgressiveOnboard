@@ -169,6 +169,7 @@ public struct ProgressiveOnboardView: View {
             
             VStack {
                 Text(onboard.description)
+                    .foregroundColor(.black)
                     .padding(10)
                 
                 HStack {
